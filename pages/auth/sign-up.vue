@@ -33,7 +33,7 @@
           @iconClick="showRepeatedPassword = !showRepeatedPassword"
         />
 
-        <FormBtnPrime class="mt-20">
+        <FormBtnPrime type="submit" class="mt-20">
           <span class="font-bold">اعتبارسنجی و ثبت نام</span>
         </FormBtnPrime>
         <div class="text-center mt-6 font-normal text-sm">
@@ -60,7 +60,11 @@ export default {
       showRepeatedPassword: false,
     }
   },
+
+  methods: {
+    submitForm() {
+      console.log('ok')
+    },
+  },
 }
 </script>
-
-<style></style>
