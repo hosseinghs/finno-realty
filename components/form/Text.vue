@@ -1,7 +1,7 @@
 <template>
   <div
     id="input_wrapper"
-    class="relative shadow-lg rounded-lg px-4 py-2 bg-white my-6"
+    class="relative shadow rounded-lg px-4 py-2 bg-white my-6"
   >
     <input
       class="w-full text-gray-label text-gray-label::placeholder outline-none"
