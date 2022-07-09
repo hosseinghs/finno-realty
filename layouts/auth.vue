@@ -6,10 +6,6 @@
 
 <script>
 export default {
-  middleware() {
-    console.log('auth')
-  },
+  middleware() {},
 }
 </script>
-
-<style></style>

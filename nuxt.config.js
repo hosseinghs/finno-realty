@@ -13,9 +13,13 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: [],
+  css: ['~/assets/styles/main.css'],
 
   plugins: [],
+
+  server: {
+    host: '192.168.160.188',
+  },
 
   components: true,
 
