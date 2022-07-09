@@ -8,11 +8,7 @@
 
       <div>
         <form @submit.prevent="submitForm()">
-          <FormText
-            icon
-            type="text"
-            placeholder="شماره موبایل/ نام کاربری/ ایمیل"
-          />
+          <FormText icon type="text" placeholder="موبایل/ نام کاربری/ ایمیل" />
           <FormText
             placeholder="رمز عبور"
             :type="showPassword ? 'text' : 'password'"
