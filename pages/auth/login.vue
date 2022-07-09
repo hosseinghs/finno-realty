@@ -22,9 +22,10 @@
             <span class="cursor-pointer"> رمز عبور خود را فراموش کرده ام </span>
           </div>
 
-          <FormBtnPrime class="mt-20">
+          <FormBtnPrime class="mt-20" type="submit" :isLoading="loading">
             <span class="font-bold"> ورود </span>
           </FormBtnPrime>
+
           <div class="text-center mt-6 font-normal text-sm">
             <p class="text-gray-label">
               هنوز ثبت نام نکرده اید؟
@@ -47,12 +48,16 @@ export default {
   data() {
     return {
       showPassword: false,
+      loading: false,
     }
   },
 
   methods: {
     submitForm() {
-      console.log('ok')
+      this.loading = true
+      setTimeout(() => {
+        this.loading = false
+      }, 3000)
     },
   },
 }

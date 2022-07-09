@@ -8,7 +8,7 @@
 
 <style scoped>
 .loader {
-  border-top-color: #CBCBCB;
+  border-top-color: #2563eb;
   -webkit-animation: spinner 1.5s linear infinite;
   animation: spinner 1.5s linear infinite;
 }
