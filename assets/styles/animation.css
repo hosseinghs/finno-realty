@@ -1,0 +1,24 @@
+.page-enter-active,
+.page-leave-active,
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.4s;
+}
+
+.page-enter,
+.page-leave-to,
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+
+.smooth_move-enter-active,
+.smooth_move-leave-active {
+  transition: all 0.2s;
+}
+
+.smooth_move-enter,
+.smooth_move-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
