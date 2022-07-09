@@ -1,9 +1,11 @@
 <template>
   <AuthCard>
     <AuthFinnoRealty />
-    <ResetPasswordStepOne />
-    <ResetPasswordStepTwo />
-    <ResetPasswordStepThree />
+    <transition name="smooth_move">
+      <ResetPasswordStepOne />
+      <ResetPasswordStepTwo />
+      <ResetPasswordStepThree />
+    </transition>
   </AuthCard>
 </template>
 
