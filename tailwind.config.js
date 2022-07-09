@@ -9,6 +9,7 @@ module.exports = {
       'gray-label': '#757575',
       white: '#ffffff',
       'white-100': '#F9F9F9',
+      invalid: '#DC2626',
     },
     extend: {},
   },
