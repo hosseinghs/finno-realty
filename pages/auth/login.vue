@@ -30,6 +30,7 @@
               هنوز ثبت نام نکرده اید؟
               <span
                 class="text-prime font-bold cursor-pointer hover:text-prime_h"
+                @click.stop="$router.push({ name: 'auth-sign-up' })"
               >
                 ثبت نام کنید
               </span>
