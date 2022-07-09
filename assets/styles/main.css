@@ -1,7 +1,10 @@
+@import url(font.css);
+
 html {
   direction: rtl !important;
 }
 
 body {
+  font-family: dana !important;
   margin: 0;
 }
