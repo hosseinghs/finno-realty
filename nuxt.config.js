@@ -17,6 +17,10 @@ export default {
 
   plugins: [],
 
+  server: {
+    host: '192.168.160.188',
+  },
+
   components: true,
 
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', 'nuxt-vite'],
