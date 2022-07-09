@@ -31,7 +31,9 @@
           <div class="text-center mt-6 font-normal text-sm">
             <p class="text-gray-label">
               هنوز ثبت نام نکرده اید؟
-              <span class="text-prime cursor-pointer hover:text-prime_h">
+              <span
+                class="text-prime font-bold cursor-pointer hover:text-prime_h"
+              >
                 ثبت نام کنید
               </span>
             </p>
