@@ -2,7 +2,7 @@ export default {
   head: {
     title: 'finnoRealty',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'fa-IR',
     },
     meta: [
       { charset: 'utf-8' },
