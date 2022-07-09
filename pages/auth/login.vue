@@ -2,7 +2,7 @@
   <div>
     <AuthCard>
       <div class="text-prime text-center mb-10">
-        <h1 class="font-bold mb-1 text-2xl">فینوریلتی</h1>
+        <h1 class="font-bold mb-2 text-2xl">فینوریلتی</h1>
         <span class="font-normal text-lg"> پلتفرم مدیریت املاک </span>
       </div>
 
@@ -16,6 +16,7 @@
           <FormText
             placeholder="رمز عبور"
             :type="showPassword ? 'text' : 'password'"
+            class="mb-0"
             autocomplete
             :icon="
               showPassword
@@ -24,7 +25,7 @@
             "
             @iconClick="showPassword = !showPassword"
           />
-          <div class="text-gray-label text-left text-sm mt-2">
+          <div class="text-gray-label text-left text-xs md:text-sm mt-2">
             <span class="cursor-pointer"> رمز عبور خود را فراموش کرده ام </span>
           </div>
 
@@ -57,11 +58,6 @@ export default {
     submitForm() {
       console.log('ok')
     },
-    log(e) {
-      console.log(e)
-    },
   },
 }
 </script>
-
-<style></style>

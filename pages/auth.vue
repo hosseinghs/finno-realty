@@ -1,6 +1,8 @@
 <template>
-  <div class="w-full h-screen flex justify-center items-center px-4">
-    <div class="w-full lg:w-1/4 mx-auto bx">
+  <div
+    class="w-full h-screen flex justify-center items-center bg-white-100 lg:bg-white px-10"
+  >
+    <div class="w-full md:w-1/2 xl:w-1/4 mx-auto bx">
       <Nuxt />
     </div>
   </div>
@@ -11,9 +13,3 @@ export default {
   layout: 'auth',
 }
 </script>
-
-<style>
-.bx {
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
-}
-</style>
