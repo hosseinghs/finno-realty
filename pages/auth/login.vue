@@ -19,10 +19,15 @@
             @iconClick="showPassword = !showPassword"
           />
           <div class="text-gray-label text-left text-xs md:text-sm mt-2">
-            <span class="cursor-pointer"> رمز عبور خود را فراموش کرده ام </span>
+            <span
+              class="cursor-pointer"
+              @click.stop="$router.push({ name: 'auth-reset-password' })"
+            >
+              رمز عبور خود را فراموش کرده ام
+            </span>
           </div>
 
-          <FormBtnPrime class="mt-20" type="submit" :isLoading="loading">
+          <FormBtnPrime class="mt-20" type="submit" :is-loading="loading">
             <span class="font-bold"> ورود </span>
           </FormBtnPrime>
 
@@ -45,6 +50,8 @@
 
 <script>
 export default {
+  name: 'LoginPage',
+
   data() {
     return {
       showPassword: false,
