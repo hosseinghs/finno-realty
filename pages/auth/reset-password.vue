@@ -15,9 +15,6 @@ import { mapState, mapActions } from 'vuex'
 export default {
   computed: {
     ...mapState('auth/reset-password', ['step']),
-    a() {
-      return 1
-    },
   },
 
   methods: {
