@@ -94,7 +94,7 @@ export function setThemeautomatically() {
     localStorage.getItem('theme') === 'dark' ||
     (!('theme' in localStorage) &&
       window.matchMedia('(prefers-color-scheme: dark)').matches)
-  console.log(isThemeDark);
+
   if (isThemeDark) {
     {
       html.classList.add('dark')
