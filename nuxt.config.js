@@ -15,7 +15,7 @@ export default {
 
   css: ['~/assets/styles/main.css', '~/assets/styles/animation.css'],
 
-  plugins: [],
+  plugins: [{ src: '~/plugins/vuelidate.js', ssr: false }],
 
   server: {
     host: '192.168.160.188',
