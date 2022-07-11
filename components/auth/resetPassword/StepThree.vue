@@ -28,7 +28,7 @@
       />
 
       <FormBtnPrime type="submit" class="mt-5">
-        <span class="font-bold">بازیابی رمز عبور</span>
+        <span class="font-bold">تایید</span>
       </FormBtnPrime>
     </form>
   </div>

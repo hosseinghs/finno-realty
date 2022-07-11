@@ -4,7 +4,7 @@
       <FormText icon type="text" placeholder="کد تایید را وارد کنید" />
 
       <FormBtnPrime type="submit" class="mt-5">
-        <span class="font-bold">ادامه</span>
+        <span class="font-bold">بازیابی رمز عبور</span>
       </FormBtnPrime>
     </form>
   </div>
