@@ -1,7 +1,7 @@
 <template>
   <div
     id="input_wrapper"
-    class="relative shadow border-white-100 dark:bg-black-100 rounded-lg px-4 py-2 bg-white-100 dark:border dark:border-white my-6 transition-all duration-100"
+    class="relative shadow border-100 dark:bg-black-100 rounded-lg px-4 py-2 bg-white dark:border dark:border-white my-6 transition-all duration-100"
     :class="
       activeFocus ? 'border-2  border-prime_active' : 'border-2 border-white'
     "
