@@ -86,3 +86,22 @@ export function getType(obj) {
     Object.prototype.toString.call(obj).replace(/^\[object (\S+)\]$/, '$1')
   )
 }
+
+export function setThemeautomatically() {
+  const html = document.querySelector('html')
+
+  const isThemeDark =
+    localStorage.getItem('theme') === 'dark' ||
+    (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  console.log(isThemeDark);
+  if (isThemeDark) {
+    {
+      html.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+    }
+  } else {
+    html.classList.remove('dark')
+    localStorage.setItem('theme', 'light')
+  }
+}
