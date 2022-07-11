@@ -1,7 +1,7 @@
 <template>
   <AuthCard>
     <AuthFinnoRealty />
-    <transition name="smooth_move">
+    <transition name="smooth_move" mode="out-in">
       <AuthResetPasswordStepOne v-if="step === 1" />
       <AuthResetPasswordStepTwo v-if="step === 2" />
       <AuthResetPasswordStepThree v-if="step === 3" />
