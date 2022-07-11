@@ -53,12 +53,23 @@
 </template>
 
 <script>
+import signUpModule from '~/store/auth/-sign-up'
+
 export default {
   data() {
     return {
       showPassword: false,
       showRepeatedPassword: false,
     }
+  },
+
+  beforeCreate() {
+    if (!this.$store.hasModule('sign-up'))
+      this.$store.registerModule('sign-up', signUpModule)
+  },
+
+  beforeDestroy() {
+    this.$store.unregisterModule('sign-up')
   },
 
   methods: {
