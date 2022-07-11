@@ -5,7 +5,7 @@
         <img :src="require('~/assets/img/icon/back-arrow.svg')" />
       </button>
     </div>
-    <AuthFinnoRealty />
+    <AuthFinnoRealty title="بازیابی رمز عبور" />
     <transition name="smooth_move" mode="out-in">
       <AuthResetPasswordStepOne v-if="step === 1" />
       <AuthResetPasswordStepTwo v-if="step === 2" />
