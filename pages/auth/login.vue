@@ -20,7 +20,7 @@
           />
           <div class="text-gray-label text-left text-xs md:text-sm mt-2">
             <span
-              class="cursor-pointer"
+              class="cursor-pointer dark:text-white"
               @click.stop="$router.push({ name: 'auth-reset-password' })"
             >
               رمز عبور خود را فراموش کرده ام
