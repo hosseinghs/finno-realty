@@ -10,6 +10,8 @@ module.exports = {
       white: '#ffffff',
       'white-100': '#F9F9F9',
       invalid: '#DC2626',
+      'black-100': ' #363636',
+      'black-200': '#242526',
     },
     extend: {},
   },
