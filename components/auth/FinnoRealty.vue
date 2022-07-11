@@ -1,5 +1,5 @@
 <template>
-  <div class="text-prime text-center mb-10">
+  <div class="text-prime dark:text-white text-center mb-10">
     <h1 class="font-bold mb-2 text-2xl">فینوریلتی</h1>
     <span class="font-normal text-lg"> {{ title }}</span>
   </div>
