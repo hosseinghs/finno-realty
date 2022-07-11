@@ -1,5 +1,10 @@
 <template>
   <AuthCard>
+    <div class="absolute" style="top: 15px; left: 20px">
+      <button @click.stop="$router.back()">
+        <img :src="require('~/assets/img/icon/back-arrow.svg')" />
+      </button>
+    </div>
     <AuthFinnoRealty />
     <transition name="smooth_move" mode="out-in">
       <AuthResetPasswordStepOne v-if="step === 1" />
