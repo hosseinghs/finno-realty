@@ -16,14 +16,24 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import resetPasswordModule from '~/store/auth/-reset-password'
 
 export default {
   computed: {
-    ...mapState('auth/reset-password', ['step']),
+    ...mapState('reset-password', ['step']),
+  },
+
+  beforeCreate() {
+    if (!this.$store.hasModule('reset-password'))
+      this.$store.registerModule('reset-password', resetPasswordModule)
+  },
+
+  beforeDestroy() {
+    this.$store.unregisterModule('reset-password')
   },
 
   methods: {
-    ...mapActions('auth/reset-password', ['updateStep']),
+    ...mapActions('reset-password', ['updateStep']),
     submitForm() {
       console.log('ok')
     },
