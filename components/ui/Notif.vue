@@ -1,8 +1,9 @@
+// todo : fix progress_fil animation
 <template>
   <div
     id="notif_component"
     class="w-80 fixed left-1/2 transition-all duration-200 transform -translate-x-1/2 z-30"
-    :class="visible ? 'top-8' : '-top-24'"
+    :class="visible ? 'top-8' : '-top-32'"
   >
     <div :class="`relative rounded px-4 py-6 bg-${notif.color}`">
       <div class="flex items-center justify-center">
@@ -21,11 +22,11 @@
       </div>
     </div>
     <div
-      class="mt-1 h-2 rounded-b-lg bg-prime_active opacity-20 relative"
+      class="mt-1 h-2 rounded-b-lg opacity-20 relative"
       :class="`bg-${notif.color}`"
     >
       <div
-        class="progress_fill h-full rounded-b-lg absolute"
+        class="absolute h-full progress_fill rounded-b-lg"
         :class="`bg-${notif.color}`"
       ></div>
     </div>
@@ -47,11 +48,11 @@ export default {
       },
     },
 
-    // cssProgress() {
-    //   return {
-    //     '--time': `${this.timer / 1000}s`,
-    //   }
-    // },
+    cssVars() {
+      return {
+        '--time': `${this.timer / 1000}s`,
+      }
+    },
   },
 
   methods: {
@@ -60,9 +61,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .progress_fill {
-  animation: progress 5000 linear 0s 1 normal forwards progress !important;
+  left: 0;
+  top: 0;
+  animation: var(--time) linear 0s 1 normal forwards progress;
 }
 
 @keyframes progress {
