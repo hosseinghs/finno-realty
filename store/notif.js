@@ -42,7 +42,7 @@ export default {
       title = title || 'عملیات با موفقیت انجام شد'
       timer = timer === undefined ? 5000 : timer
       dispatch('notify', {
-        config: { color: 'success', title },
+        config: { color: 'notif-success', title },
         timer,
       })
     },
@@ -51,7 +51,7 @@ export default {
       title = title || 'خطایی رخ داده است. مجدد تلاش کنید.'
       timer = timer === undefined ? 5000 : timer
       dispatch('notify', {
-        config: { color: 'error', title },
+        config: { color: 'notif-error', title },
         timer,
       })
     },
