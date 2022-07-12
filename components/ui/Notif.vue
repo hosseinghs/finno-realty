@@ -6,9 +6,11 @@
     <div class="flex items-center justify-center">
       <div class="flex items-center justify-center flex-1">
         <FormBtnNotifSuccess />
-        <span class="mr-1 text-white">عملیات ثبت نام با موفقیت انجام شد</span>
+        <span class="mr-2 text-white text-sm font-normal">
+          عملیات ثبت نام با موفقیت انجام شد
+        </span>
       </div>
-      <div class="text-white divide-y-4"></div>
+      <div class="w-9 h-px transform rotate-90 bg-white mr-2"></div>
       <div>
         <FormBtnIconClose />
       </div>
@@ -19,5 +21,3 @@
 <script>
 export default {}
 </script>
-
-<style></style>
