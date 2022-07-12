@@ -11,6 +11,7 @@
           <FormBtnNotifSuccess />
           <span class="mr-2 text-white text-sm font-normal">
             {{ notif.title }}
+            {{ `bg-${notif.color}` }}
           </span>
         </div>
         <div class="w-9 h-px transform rotate-90 bg-white mr-2"></div>
@@ -21,13 +22,12 @@
         </div>
       </div>
     </div>
-    <div
-      class="mt-1 h-2 rounded-b-lg opacity-20 relative"
-      :class="`bg-${notif.color}`"
-    >
+    <div class="relative mt-1 h-2">
+      <div class="h-full opacity-20 rounded" :class="`bg-${notif.color}`"></div>
       <div
-        class="absolute h-full progress_fill rounded-b-lg"
+        class="h-full progress_fill absolute bottom-0 left-0 rounded"
         :class="`bg-${notif.color}`"
+        :style="cssVars"
       ></div>
     </div>
   </div>
@@ -63,8 +63,6 @@ export default {
 
 <style lang="scss" scoped>
 .progress_fill {
-  left: 0;
-  top: 0;
   animation: var(--time) linear 0s 1 normal forwards progress;
 }
 
