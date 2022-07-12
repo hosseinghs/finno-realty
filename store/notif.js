@@ -1,12 +1,10 @@
+import { Notif } from '~/models/notif'
 export default {
   namespaced: true,
 
   state: () => ({
     isVisible: false,
-    notif: {
-      color: '',
-      title: '',
-    },
+    notif: new Notif(),
     timer: 5000,
   }),
 
