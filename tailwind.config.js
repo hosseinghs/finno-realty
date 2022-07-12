@@ -14,7 +14,7 @@ module.exports = {
       'black-200': '#242526',
       'notif-success': '#15C39A',
       'notif-error': '#DC2626',
-      'notif-error': '#E9C611',
+      'notif-warning': '#E9C611',
     },
     extend: {},
   },
