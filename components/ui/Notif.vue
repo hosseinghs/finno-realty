@@ -1,15 +1,17 @@
 <template>
   <div
     id="notif_component"
-    class="fixed top-5 left-1/2 transform -translate-x-1/2 w-80 px-4 bg-prime_h z-30"
+    class="fixed px-4 py-6 top-8 left-1/2 transform -translate-x-1/2 w-80 bg-prime_h rounded z-30"
   >
-    <div class="flex items-center justify-end">
-      <FormBtnIconClose />
-    </div>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Et libero quod
-      enim molestias quasi, ullam, unde culpa sequi veniam suscipit dicta,
-      ducimus a impedit totam nostrum voluptatibus ad adipisci at.
+    <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center flex-1">
+        <FormBtnNotifSuccess />
+        <span class="mr-1 text-white">عملیات ثبت نام با موفقیت انجام شد</span>
+      </div>
+      <div class="text-white divide-y-4"></div>
+      <div>
+        <FormBtnIconClose />
+      </div>
     </div>
   </div>
 </template>
