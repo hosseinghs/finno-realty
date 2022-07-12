@@ -34,8 +34,8 @@ export default {
       }, timer)
     },
 
-    disable({ commit }) {
-      commit('SET_IS_VISIBLE', false)
+    setNotifState({ commit }, bool) {
+      commit('SET_IS_VISIBLE', bool)
     },
 
     showSuccess({ dispatch }, { title, timer }) {
