@@ -1,9 +1,19 @@
 export default {
   namespaced: true,
 
-  state: () => ({}),
+  state: () => ({
+    step: 1,
+  }),
 
-  mutations: {},
+  mutations: {
+    SET_STEP(state, step) {
+      state.step = step
+    },
+  },
 
-  actions: {},
+  actions: {
+    updateStep({ commit }, step) {
+      commit('SET_STEP', step)
+    },
+  },
 }
