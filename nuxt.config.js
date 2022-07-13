@@ -13,7 +13,11 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['~/assets/styles/main.css', '~/assets/styles/animation.css'],
+  css: [
+    '~/assets/styles/main.css',
+    '~/assets/styles/animation.css',
+    '~/assets/styles/defaults.css',
+  ],
 
   plugins: [],
 
