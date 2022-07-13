@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark:bg-black-200">
     <Nuxt />
   </div>
 </template>
