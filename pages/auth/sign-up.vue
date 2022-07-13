@@ -1,6 +1,6 @@
 <template>
   <AuthCard>
-    <AuthFinnoRealty />
+    <AuthFinnoRealty :title="title" />
     <transition name="smooth_move" mode="out-in">
       <AuthSignupStepOne v-if="step === 1" />
       <AuthSignupStepTwo v-if="step === 2" />
@@ -15,6 +15,10 @@ import signUpModule from '~/store/auth/-sign-up'
 export default {
   computed: {
     ...mapState('sign-up', ['step']),
+
+    title() {
+      return this.step === 1 ? 'پلتفرم مدیریت املاک' : 'کد تایید تلفن همراه'
+    },
   },
 
   beforeCreate() {
