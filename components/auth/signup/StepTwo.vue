@@ -2,6 +2,7 @@
   <div>
     <form @submit.prevent="submitForm()">
       <FormOtp />
+      <FormTimer />
     </form>
   </div>
 </template>
