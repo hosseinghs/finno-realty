@@ -15,11 +15,11 @@ export default {
 
   css: ['~/assets/styles/main.css', '~/assets/styles/animation.css'],
 
-  plugins: [{ src: '~/plugins/vuelidate.js', ssr: false }],
+  plugins: [{ src: '~/plugins/veeValidate.js', ssr: false }],
 
-  server: {
-    host: '192.168.160.188',
-  },
+  // server: {
+  //   host: '192.168.160.188',
+  // },
 
   components: true,
 
