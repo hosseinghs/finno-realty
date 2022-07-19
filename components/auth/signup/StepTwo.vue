@@ -1,8 +1,10 @@
 <template>
   <div>
     <form @submit.prevent="submitForm()">
-      <FormOtp />
-      <FormTimer />
+      <div class="w-56 mx-auto">
+        <FormOtp />
+        <FormTimer />
+      </div>
     </form>
   </div>
 </template>
