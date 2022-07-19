@@ -1,4 +1,10 @@
-import Vue from 'vue';
-import VeeValidate from 'vee-validate';
+import Vue from 'vue'
+import VeeValidate from 'vee-validate'
 
-Vue.use(VeeValidate);
+Vue.use(VeeValidate, {
+  classes: true,
+  classNames: {
+    valid: 'is-valid',
+    invalid: 'is-invalid',
+  },
+})
