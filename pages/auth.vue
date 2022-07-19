@@ -4,9 +4,6 @@
       <UiNotif />
       <Nuxt />
     </div>
-    <button @click.stop="showSuccess({ title: 'سیلام سیلام', timer: 20000 })">
-      click
-    </button>
   </AuthLayout>
 </template>
 
