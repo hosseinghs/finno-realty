@@ -11,8 +11,8 @@
       type="text"
       maxlength="1"
       pattern="/d*"
-      class="w-7 text-center bg-white-100 text-gray-label border-b border-prime outline-none"
-      :class="i !== 1 || i !== 6 ? 'mx-2' : ''"
+      class="w-7 text-center bg-white-100 text-gray-label border-b-2 border-prime dark:border-white dark:bg-black-100 outline-none"
+      :class="i !== 1 || i !== 6 ? 'mx-1' : ''"
       @keyup="onInput({ e: $event, i })"
     />
   </div>
