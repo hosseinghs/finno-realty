@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-between mt-3 font-normal text-xs text-gray-label"
+    class="flex items-center justify-between mt-3 font-normal text-xs text-gray-label dark:text-white"
   >
     <div>
       <button
