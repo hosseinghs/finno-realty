@@ -8,3 +8,11 @@ body {
   font-family: dana !important;
   margin: 0;
 }
+
+.ltr {
+  direction: ltr !important;
+}
+
+.rtl {
+  direction: rtl !important;
+}
