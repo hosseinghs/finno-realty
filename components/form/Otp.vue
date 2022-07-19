@@ -28,7 +28,6 @@ export default {
 
   methods: {
     goBack(i) {
-      console.log(i);
       const pervInputIndex = i - 1
       if (pervInputIndex !== 0) {
         const pervInput = this.$refs[`value-${pervInputIndex}`][0]
