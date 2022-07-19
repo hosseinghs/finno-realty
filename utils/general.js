@@ -87,7 +87,7 @@ export function getType(obj) {
   )
 }
 
-export function setThemeautomatically() {
+export function setThemeAutomatically() {
   const html = document.querySelector('html')
 
   const isThemeDark =
