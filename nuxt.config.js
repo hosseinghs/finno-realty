@@ -19,11 +19,11 @@ export default {
     '~/assets/styles/defaults.css',
   ],
 
-  plugins: [],
+  plugins: [{ src: '~/plugins/veeValidate.js', ssr: false }],
 
-  server: {
-    host: '192.168.160.188',
-  },
+  // server: {
+  //   host: '192.168.160.188',
+  // },
 
   components: true,
 
