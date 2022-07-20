@@ -15,6 +15,7 @@ module.exports = {
       'notif-success': '#15C39A',
       'notif-error': '#DC2626',
       'notif-warning': '#E9C611',
+      orange: '#EC860E',
     },
     extend: {},
   },
