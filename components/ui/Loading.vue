@@ -2,13 +2,24 @@
   <div class="flex justify-center items-center">
     <div
       class="loader ease-linear rounded-full border-4 border-t-4 border-white w-6 h-6 mr-2"
+      :style="`border-top-color:${color}`"
     ></div>
   </div>
 </template>
 
+<script>
+export default {
+  props: {
+    color: {
+      type: String,
+      default: '#2563eb',
+    },
+  },
+}
+</script>
+
 <style scoped>
 .loader {
-  border-top-color: #2563eb;
   -webkit-animation: spinner 1.5s linear infinite;
   animation: spinner 1.5s linear infinite;
 }
