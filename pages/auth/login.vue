@@ -4,13 +4,22 @@
       <AuthFinnoRealty />
 
       <div>
-        <form @submit.prevent="submitForm()">
-          <FormText icon type="text" placeholder="موبایل/ نام کاربری/ ایمیل" />
+        <Form name="loginForm">
           <FormText
+            name="username"
+            type="text"
+            icon
+            :rules="[mustFillRule]"
+            placeholder="موبایل/ نام کاربری/ ایمیل"
+          />
+
+          <FormText
+            name="password"
             placeholder="رمز عبور"
             :type="showPassword ? 'text' : 'password'"
             class="mb-0"
             autocomplete
+            :rules="[mustFillRule, passwordRule]"
             :icon="
               showPassword
                 ? `${require('~/assets/img/icon/eye-off.svg')}`
@@ -18,6 +27,7 @@
             "
             @iconClick="showPassword = !showPassword"
           />
+
           <div class="text-gray-label text-left text-xs md:text-sm mt-2">
             <span
               class="cursor-pointer dark:text-white"
@@ -42,13 +52,15 @@
               </span>
             </p>
           </div>
-        </form>
+        </Form>
       </div>
     </AuthCard>
   </div>
 </template>
 
 <script>
+import { mustFillRule, passwordRule } from '~/utils/validation'
+
 export default {
   name: 'LoginPage',
 
@@ -60,11 +72,11 @@ export default {
   },
 
   methods: {
+    mustFillRule,
+    passwordRule,
+
     submitForm() {
-      this.loading = true
-      setTimeout(() => {
-        this.loading = false
-      }, 3000)
+      console.log(this.$refs.loginForm)
     },
   },
 }
