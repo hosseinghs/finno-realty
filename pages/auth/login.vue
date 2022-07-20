@@ -9,6 +9,7 @@
             name="username"
             type="text"
             icon
+            autofocus
             :rules="[mustFillRule]"
             placeholder="موبایل/ نام کاربری/ ایمیل"
           />
