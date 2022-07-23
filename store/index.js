@@ -4,6 +4,7 @@ export default {
   state: () => ({
     isModalVisible: false,
     isMobileSidebarVisible: false,
+    isDropdownVisible: false,
   }),
 
   mutations: {
@@ -13,6 +14,9 @@ export default {
     SET_MOBILE_SIDEBAR_STATE(state, bool) {
       state.isMobileSidebarVisible = bool
     },
+    SET_DROPDOWN_STATE(state, bool) {
+      state.isDropdownVisible = bool
+    },
   },
 
   actions: {
@@ -21,6 +25,9 @@ export default {
     },
     setMobileSidebarState({ commit }, bool) {
       commit('SET_MOBILE_SIDEBAR_STATE', bool)
+    },
+    setDropdownState({ commit }, bool) {
+      commit('SET_DROPDOWN_STATE', bool)
     },
   },
 }

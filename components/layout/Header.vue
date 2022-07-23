@@ -9,7 +9,11 @@
     </div>
     <div class="flex items-center">
       <div class="flex-1">
-        <UiDropdown text="انتخاب نقش" />
+        <UiDropdown
+          title="انتخاب نقش"
+          @open="log()"
+          @itemClick="itemClicked()"
+        />
       </div>
       <div class="hidden md:block">
         <div class="flex items-center">
@@ -32,9 +36,15 @@ export default {
   name: 'AppHeaderComponent',
 
   methods: {
-    ...mapActions(['setMobileSidebarState']),
+    ...mapActions(['setMobileSidebarState', 'setDropdownState']),
+
+    log() {
+      this.setDropdownState(true)
+    },
+
+    itemClicked() {
+      this.setDropdownState(false)
+    },
   },
 }
 </script>
-
-<style></style>
