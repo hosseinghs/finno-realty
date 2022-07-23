@@ -5,12 +5,12 @@
     </span>
     <div
       id="input_wrapper"
-      :class="`relative shadow border-100 dark:bg-black-100 rounded-lg px-4 py-2 bg-white dark:border dark:border-white transition-all duration-100 ${
-        error ? 'border-invalid' : ''
-      }
+      :class="`relative shadow border-100 dark:bg-black-100 rounded-lg px-4 py-2 bg-white dark:border dark:border-white transition-all duration-100
+       ${error ? 'border-invalid' : ''}
        ${
          activeFocus ? 'border-2  border-prime_active' : 'border-2 border-white'
-       }`"
+       } 
+       ${wrapperClass}`"
     >
       <input
         class="w-full text-gray-label dark:text-white dark:bg-black-100 placeholder-text-gray-label dark:placeholder-white outline-none"
@@ -52,6 +52,10 @@ export default {
       required: true,
     },
     label: {
+      type: String,
+      default: '',
+    },
+    wrapperClass: {
       type: String,
       default: '',
     },
