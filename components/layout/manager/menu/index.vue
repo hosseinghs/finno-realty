@@ -3,7 +3,7 @@
     <div class="hidden md:block w-56">
       <LayoutManagerMenuDesktop />
     </div>
-    <div class="md:hidden" v-if="isMobileSidebarVisible">
+    <div v-if="isMobileSidebarVisible" class="md:hidden">
       <LayoutManagerMenuMobile />
     </div>
   </div>
