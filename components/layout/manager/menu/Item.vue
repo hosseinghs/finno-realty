@@ -1,7 +1,7 @@
 <template>
-  <li class="bg-transparent hover:bg-white-100 transition-all duration-200">
+  <li class="py-2 px-4 bg-transparent hover:bg-white-100 transition-all duration-200 cursor-pointer">
     <div class="text-gray-label">
-      <img src="" class="ml-1" />
+      <!-- <img src="" class="ml-1" /> -->
       <span>
         {{ title }}
       </span>
@@ -10,7 +10,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'SideBarMenuItemComponent',
+  props: {
+    title: {
+      type: String,
+      default: '',
+    },
+  },
+}
 </script>
-
-<style></style>
