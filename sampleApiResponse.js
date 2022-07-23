@@ -41,3 +41,11 @@ const res = {
   },
   // IMPORTANT: please note that error object will be used only and only if the SUCCESS is set to FALSE, null or undefined, otherwise the state of request will be considerd success!
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                 FINAL NOTE                                 */
+/* -------------------------------------------------------------------------- */
+
+// the main purpose of using such api responses is to have a fixed and complete convention, so we can build basic and important features of out app clean and easy to develop, debug and maintain
+// and the way to do that is for all developers use the given structures in all the services and apies!
+// good luck
