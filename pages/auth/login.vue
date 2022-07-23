@@ -18,7 +18,7 @@
             "
             @iconClick="showPassword = !showPassword"
           />
-          <div class="text-gray-label text-left text-xs md:text-sm mt-2">
+          <div class="text-gray-100 text-left text-xs md:text-sm mt-2">
             <span
               class="cursor-pointer dark:text-white"
               @click.stop="$router.push({ name: 'auth-reset-password' })"
@@ -32,7 +32,7 @@
           </FormBtnPrime>
 
           <div class="text-center mt-6 font-normal text-sm">
-            <p class="text-gray-label dark:text-white">
+            <p class="text-gray-100 dark:text-white">
               هنوز ثبت نام نکرده اید؟
               <span
                 class="text-prime font-bold cursor-pointer hover:text-prime_h"

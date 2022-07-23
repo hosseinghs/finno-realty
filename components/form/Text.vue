@@ -7,7 +7,7 @@
     "
   >
     <input
-      class="w-full text-gray-label dark:text-white dark:bg-black-100 placeholder-text-gray-label dark:placeholder-white outline-none"
+      class="w-full text-gray-100 dark:text-white dark:bg-black-100 placeholder-text-gray-100 dark:placeholder-white outline-none"
       v-bind="$attrs"
       @focus="activeFocus = true"
       @blur="activeFocus = false"
