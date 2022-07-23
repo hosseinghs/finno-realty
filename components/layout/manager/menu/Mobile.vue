@@ -1,9 +1,11 @@
 <template>
-  <div></div>
+  <div id="mobile_sidebar">
+    <LayoutManagerMenuList />
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'MobileSideBarComponent',
+}
 </script>
-
-<style></style>
