@@ -1,9 +1,9 @@
 <template>
   <div class="fixed min-h-screen top-0 right-0 z-10 bg-white">
-    <div class="hidden md:block">
+    <div class="hidden md:block w-56">
       <LayoutManagerMenuDesktop />
     </div>
-    <div class="md:hidden h-full" v-if="isMobileSidebarVisible">
+    <div class="md:hidden" v-if="isMobileSidebarVisible">
       <LayoutManagerMenuMobile />
     </div>
   </div>

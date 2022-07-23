@@ -1,5 +1,5 @@
 <template>
-  <div class="w-56">
+  <div>
     <LayoutManagerMenuList />
   </div>
 </template>
