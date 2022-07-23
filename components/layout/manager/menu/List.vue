@@ -1,5 +1,9 @@
 <template>
-  <ul>
+  <ul class="bg-white w-full h-full px-4">
+    <div class="text-center mt-6 mb-10">
+      <h2 class="text-prime_h font-bold">احمد احمدیان</h2>
+      <span class="text-prime font-normal">خوش آمدین</span>
+    </div>
     <LayoutManagerMenuItem
       v-for="item in menuItems"
       :key="item.id"
