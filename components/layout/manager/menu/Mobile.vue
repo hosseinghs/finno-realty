@@ -1,5 +1,5 @@
 <template>
-  <div id="mobile_sidebar">
+  <div>
     <LayoutManagerMenuList />
   </div>
 </template>
