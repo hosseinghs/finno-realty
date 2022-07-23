@@ -11,6 +11,7 @@
       <div class="flex-1">
         <UiDropdown
           title="انتخاب نقش"
+          :items="userRoles"
           @open="log()"
           @itemClick="itemClicked()"
         />
@@ -30,10 +31,14 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default {
   name: 'AppHeaderComponent',
+
+  computed: {
+    ...mapState(['userRoles']),
+  },
 
   methods: {
     ...mapActions(['setMobileSidebarState', 'setDropdownState']),
