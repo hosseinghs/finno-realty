@@ -13,24 +13,14 @@
         @click.stop="setDropdownState(false)"
         class="w-full h-screen fixed top-0 left-0 z-10"
       ></div>
-      <ul class="w-full text-right bg-gray-200 absolute top-0 z-50">
+      <ul class="w-full text-right bg-gray-200 absolute top-2 z-50">
         <li
-          class="text-prime cursor-pointer px-4 py-2"
+          v-for="(item, i) in items"
+          :key="i"
+          class="text-prime text-sm whitespace-nowrap cursor-pointer px-4 py-2"
           @click="$emit('itemClick')"
         >
-          item
-        </li>
-        <li
-          class="text-prime cursor-pointer px-4 py-2"
-          @click="$emit('itemClick')"
-        >
-          item
-        </li>
-        <li
-          class="text-prime cursor-pointer px-4 py-2"
-          @click="$emit('itemClick')"
-        >
-          item
+          {{ item.title }}
         </li>
       </ul>
     </div>
@@ -47,9 +37,9 @@ export default {
       default: '',
     },
 
-    visible: {
-      type: Boolean,
-      default: false,
+    items: {
+      type: Array,
+      default: () => [],
     },
   },
 
