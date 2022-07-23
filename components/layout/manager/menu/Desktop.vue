@@ -1,9 +1,9 @@
 <template>
-  <div></div>
+  <LayoutManagerMenuList />
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'DesktopSideBarComponent',
+}
 </script>
-
-<style></style>

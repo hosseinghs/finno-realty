@@ -1,9 +1,12 @@
 <template>
-  <div></div>
+  <div>
+    <LayoutManagerMenuDesktop />
+    <!-- <LayoutManagerMenuMobile /> -->
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'SideBarComponent',
+}
 </script>
-
-<style></style>
