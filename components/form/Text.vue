@@ -1,5 +1,8 @@
 <template>
   <div class="my-6">
+    <span v-if="label" class="font-normal text-sm text-gray-label mb-1">
+      {{ label }}
+    </span>
     <div
       id="input_wrapper"
       :class="`relative shadow border-100 dark:bg-black-100 rounded-lg px-4 py-2 bg-white dark:border dark:border-white transition-all duration-100 ${
@@ -47,6 +50,10 @@ export default {
       type: String,
       default: '',
       required: true,
+    },
+    label: {
+      type: String,
+      default: '',
     },
   },
 
