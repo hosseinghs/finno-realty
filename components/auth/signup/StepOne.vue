@@ -34,7 +34,7 @@
         <span class="font-bold">اعتبارسنجی و ثبت نام</span>
       </FormBtnPrime>
       <div class="text-center mt-6 font-normal text-sm">
-        <p class="text-gray-label">
+        <p class="text-gray-100">
           قبلا ثبت نام کرده اید؟
           <span
             class="text-prime font-bold cursor-pointer hover:text-prime_h"
