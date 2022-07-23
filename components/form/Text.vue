@@ -24,6 +24,8 @@
 
 <script>
 export default {
+  name: 'InputComponent',
+
   props: {
     icon: {
       type: String,
