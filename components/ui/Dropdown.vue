@@ -4,7 +4,7 @@
       <button
         class="flex items-center justify-center text-prime font-semibold text-sm"
       >
-        <div class="ml-2">{{ title }}</div>
+        <div class="ml-1">{{ title }}</div>
         <img :src="require('~/assets/img/icon/arrow-down.svg')" />
       </button>
     </div>
