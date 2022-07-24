@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="text-left px-4">
+    <div class="flex items-start justify-between px-2 mt-4">
+      <FormBtnDarkModeToggle />
+      <LayoutManagerMenuWelcome />
       <FormBtnIconClose />
     </div>
     <LayoutManagerMenuList />
