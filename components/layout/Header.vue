@@ -8,7 +8,7 @@
       <span class="font-normal">پلتفرم مدیریت املاک</span>
     </div>
     <div class="flex items-center">
-      <div class="flex-1">
+      <div class="flex-1 ml-4">
         <UiDropdown
           title="انتخاب نقش"
           :items="userRoles"
@@ -17,9 +17,12 @@
         />
       </div>
       <div class="hidden md:block">
-        <div class="flex items-center">
-          <div class="mx-4 cursor-pointer">
+        <div class="flex items-center justify-center">
+          <div class="cursor-pointer">
             <img :src="require('~/assets/img/notif.svg')" />
+          </div>
+          <div class="mx-4">
+            <FormBtnDarkModeToggle />
           </div>
           <div class="cursor-pointer">
             <img :src="require('~/assets/img/logout.svg')" />
