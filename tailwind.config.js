@@ -10,6 +10,7 @@ module.exports = {
       'gray-200': '#F2F2F2',
       white: '#ffffff',
       'white-100': '#F9F9F9',
+      'white-200': '#EDEDED',
       invalid: '#DC2626',
       'black-100': ' #363636',
       'black-200': '#242526',
@@ -18,7 +19,11 @@ module.exports = {
       'notif-warning': '#E9C611',
       orange: '#EC860E',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        13: '3.25rem',
+      },
+    },
   },
   variants: {
     extend: {},
