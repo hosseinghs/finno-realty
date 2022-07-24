@@ -22,7 +22,7 @@
             <img :src="require('~/assets/img/notif.svg')" />
           </div>
           <div class="mx-4">
-            <FormBtnDarkModeToggleBtn />
+            <FormBtnDarkModeToggle />
           </div>
           <div class="cursor-pointer">
             <img :src="require('~/assets/img/logout.svg')" />
