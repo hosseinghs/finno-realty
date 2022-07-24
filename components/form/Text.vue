@@ -1,12 +1,11 @@
 <template>
-  <div class="my-6">
+  <div class="input_component my-6" :class="error ? 'invalid' : ''">
     <span v-if="label" class="font-normal text-sm text-gray-label mb-1">
       {{ label }}
     </span>
     <div
       id="input_wrapper"
       :class="`relative shadow border-100 dark:bg-black-100 rounded-lg px-4 py-2 bg-white dark:border dark:border-white transition-all duration-100
-       ${error ? 'border-invalid' : ''}
        ${
          activeFocus ? 'border-2  border-prime_active' : 'border-2 border-white'
        } 
@@ -29,7 +28,7 @@
         />
       </div>
     </div>
-    <span v-show="error" class="text-xs font-normal text-invalid">
+    <span v-show="error" class="error_message text-xs font-normal">
       {{ error }}
     </span>
   </div>
@@ -82,7 +81,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$error_color: #dc2626;
+
 #input_wrapper .icon_rtl {
   left: 10px;
   top: 50%;
@@ -91,5 +92,14 @@ export default {
 
 #input_wrapper input {
   background-color: transparent;
+}
+.input_component.invalid {
+  label,
+  span.error_message {
+    color: $error_color;
+  }
+  #input_wrapper {
+    border-color: $error_color;
+  }
 }
 </style>
