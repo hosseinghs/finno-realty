@@ -1,6 +1,8 @@
 <template>
   <div>
-    <LayoutManagerMenuWelcome />
+    <div class="mt-6 mb-8">
+      <LayoutManagerMenuWelcome />
+    </div>
     <LayoutManagerMenuList />
   </div>
 </template>
