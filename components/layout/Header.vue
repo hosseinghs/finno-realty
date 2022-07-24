@@ -8,7 +8,7 @@
       <span class="font-normal">پلتفرم مدیریت املاک</span>
     </div>
     <div class="flex items-center">
-      <div class="flex-1">
+      <div class="flex-1 ml-4">
         <UiDropdown
           title="انتخاب نقش"
           :items="userRoles"
