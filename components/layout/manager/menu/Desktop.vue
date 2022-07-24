@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LayoutManagerMenuWelcome />
     <LayoutManagerMenuList />
   </div>
 </template>
