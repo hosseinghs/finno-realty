@@ -12,6 +12,7 @@ module.exports = {
       'white-100': '#F9F9F9',
       'white-200': '#EDEDED',
       invalid: '#DC2626',
+      black: '#000000',
       'black-100': ' #363636',
       'black-200': '#242526',
       'notif-success': '#15C39A',
