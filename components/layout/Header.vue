@@ -17,9 +17,12 @@
         />
       </div>
       <div class="hidden md:block">
-        <div class="flex items-center">
-          <div class="mx-4 cursor-pointer">
+        <div class="flex items-center justify-center">
+          <div class="cursor-pointer">
             <img :src="require('~/assets/img/notif.svg')" />
+          </div>
+          <div class="mx-4">
+            <FormBtnDarkModeToggleBtn />
           </div>
           <div class="cursor-pointer">
             <img :src="require('~/assets/img/logout.svg')" />
